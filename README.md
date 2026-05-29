@@ -3,7 +3,7 @@
 An AI-powered Christianity chatbot that provides scripture-grounded answers using RAG (Retrieval-Augmented Generation), verse verification, denomination-aware responses, and Christian image generation.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Django](https://img.shields.io/badge/Django-5.1-green)
+![Django](https://img.shields.io/badge/Django-5.2-green)
 ![Docker](https://img.shields.io/badge/Docker-Compose-blue)
 ![LangChain](https://img.shields.io/badge/LangChain-RAG-orange)
 
