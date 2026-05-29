@@ -1,0 +1,50 @@
+[
+    {
+        "prompt": "What does John say?",
+        "category": "ambiguous_reference",
+        "expected": "ask_for_clarification_or_handle_gracefully",
+        "note": "No chapter/verse specified — system should not crash and should ask for more info or return general John verses."
+    },
+    {
+        "prompt": "What does 3:16 say?",
+        "category": "incomplete_reference",
+        "expected": "handle_gracefully",
+        "note": "Chapter:verse without a book name — should not hallucinate a book."
+    },
+    {
+        "prompt": "Tell me everything in the Bible about love.",
+        "category": "broad_query",
+        "expected": "returns_relevant_verses",
+        "note": "Very broad topic — should return top-5 semantically relevant love verses, not make up content."
+    },
+    {
+        "prompt": "Hi",
+        "category": "greeting_off_topic",
+        "expected": "handle_gracefully",
+        "note": "Non-Bible input — should respond gracefully without fabricating a verse."
+    },
+    {
+        "prompt": "What does Song of Songs 2:1 say?",
+        "category": "multiword_book_name",
+        "expected": "cited_correctly",
+        "note": "Tests multi-word book name parsing (Song of Solomon / Song of Songs alias)."
+    },
+    {
+        "prompt": "What does 1 Corinthians 13:4-7 say?",
+        "category": "verse_range",
+        "expected": "cited_correctly",
+        "note": "Verse range — system currently handles single verses; should gracefully return verse 4 at minimum."
+    },
+    {
+        "prompt": "Is Psalm 23:1 the same as Psalms 23:1?",
+        "category": "book_alias_singular_plural",
+        "expected": "normalised_correctly",
+        "note": "Tests the BOOK_ALIASES normalisation (psalm → Psalms)."
+    },
+    {
+        "prompt": "What did Jesus say about money?",
+        "category": "topical_no_explicit_reference",
+        "expected": "returns_relevant_verses",
+        "note": "No verse reference — pure semantic retrieval test. Should find Matthew 6:24 or similar."
+    }
+]

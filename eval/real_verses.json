@@ -1,0 +1,27 @@
+[
+    {
+        "reference": "John 3:16",
+        "expected_text_contains": "God so loved the world",
+        "expected": "cited_correctly"
+    },
+    {
+        "reference": "Psalm 23:1",
+        "expected_text_contains": "The LORD is my shepherd",
+        "expected": "cited_correctly"
+    },
+    {
+        "reference": "Genesis 1:1",
+        "expected_text_contains": "In the beginning God created",
+        "expected": "cited_correctly"
+    },
+    {
+        "reference": "Romans 8:28",
+        "expected_text_contains": "all things work together for good",
+        "expected": "cited_correctly"
+    },
+    {
+        "reference": "Philippians 4:13",
+        "expected_text_contains": "I can do all things through Christ",
+        "expected": "cited_correctly"
+    }
+]

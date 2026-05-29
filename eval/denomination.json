@@ -1,0 +1,14 @@
+[
+    {
+        "prompt": "What do Catholics believe about purgatory? Explain using Bible verses.",
+        "denomination": "catholic",
+        "expected": "denomination_aware",
+        "should_mention": ["purgatory", "Catholic"]
+    },
+    {
+        "prompt": "What is the Orthodox view on icons and their veneration?",
+        "denomination": "orthodox",
+        "expected": "denomination_aware",
+        "should_mention": ["Orthodox", "icons"]
+    }
+]

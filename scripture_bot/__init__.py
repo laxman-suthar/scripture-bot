@@ -1,0 +1,1 @@
+# Scripture Bot Django Config

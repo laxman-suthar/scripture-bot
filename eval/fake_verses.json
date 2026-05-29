@@ -1,0 +1,32 @@
+[
+    {
+        "reference": "John 4:99",
+        "text": "God loves those who sleep early and rise with the dawn.",
+        "expected": "rejected",
+        "reason": "John only has 21 chapters."
+    },
+    {
+        "reference": "Matthew 15:77",
+        "text": "Blessed are the rich, for they shall inherit everything in this world.",
+        "expected": "rejected",
+        "reason": "Matthew 15 only has 39 verses."
+    },
+    {
+        "reference": "Revelation 25:1",
+        "text": "And the angel said unto me, technology shall be the answer to mankind's suffering.",
+        "expected": "rejected",
+        "reason": "Revelation only has 22 chapters."
+    },
+    {
+        "reference": "Genesis 55:3",
+        "text": "On the eighth day, God created coffee and saw that it was good.",
+        "expected": "rejected",
+        "reason": "Genesis only has 50 chapters."
+    },
+    {
+        "reference": "Psalms 200:1",
+        "text": "The Lord helps those who help themselves, for self-reliance is divine.",
+        "expected": "rejected",
+        "reason": "Psalms only has 150 chapters. Also, this is a common misattribution — not actually in the Bible."
+    }
+]

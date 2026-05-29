@@ -1,0 +1,37 @@
+[
+    {
+        "reference": "Hezekiah 4:8",
+        "text": "The Lord blessed those who rose before dawn and gave thanks without ceasing.",
+        "expected": "rejected",
+        "category": "nonexistent_book",
+        "note": "Hezekiah is not a book of the Bible. System must not cite or validate it."
+    },
+    {
+        "reference": "3 John 99:5",
+        "text": "God shall reward the faithful with silver and gold beyond measure.",
+        "expected": "rejected",
+        "category": "invalid_chapter_verse",
+        "note": "3 John has only 1 chapter with 14 verses. Chapter 99 cannot exist."
+    },
+    {
+        "reference": "Obadiah 5:12",
+        "text": "And the prophet said, the nations shall be gathered and peace shall reign forever.",
+        "expected": "rejected",
+        "category": "invalid_chapter",
+        "note": "Obadiah has only 1 chapter. Chapter 5 does not exist."
+    },
+    {
+        "reference": "Matthew 28:21",
+        "text": "Jesus said, 'Go therefore and make disciples of all nations, baptizing them in riches.'",
+        "expected": "rejected",
+        "category": "corrupted_real_verse",
+        "note": "Matthew 28 only has 20 verses. Verse 21 does not exist. Also text is subtly corrupted from the real Great Commission."
+    },
+    {
+        "reference": "Philemon 3:7",
+        "text": "Forgive them not once, but seventy times seven, for this is the will of the Lord.",
+        "expected": "rejected",
+        "category": "wrong_book",
+        "note": "Philemon has only 1 chapter. This text is a paraphrase of Matthew 18:22 misattributed."
+    }
+]

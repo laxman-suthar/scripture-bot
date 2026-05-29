@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scripture Bot — An AI-powered Christianity assistant for Bible Q&A, verse verification, and Christian image generation.">
+    <title>Scripture Bot — AI Bible Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'chat/css/style.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="app-header">
+        <div class="header-content">
+            <div class="header-brand">
+                <div class="header-icon">✝</div>
+                <div>
+                    <h1 class="header-title">Scripture Bot</h1>
+                    <p class="header-subtitle">AI Bible Assistant</p>
+                </div>
+            </div>
+            <div class="denomination-chips" id="denomination-chips">
+                <button class="chip active" data-denomination="general">General</button>
+                <button class="chip" data-denomination="catholic">Catholic</button>
+                <button class="chip" data-denomination="protestant">Protestant</button>
+                <button class="chip" data-denomination="orthodox">Orthodox</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Chat Container -->
+    <main class="chat-container" id="chat-container">
+        <!-- Welcome Message -->
+        <div class="welcome-card" id="welcome-card">
+            <div class="welcome-icon">📖</div>
+            <h2 class="welcome-title">Welcome to Scripture Bot</h2>
+            <p class="welcome-text">
+                I'm your AI Bible assistant. I can help you explore scripture,
+                verify Bible verses, answer questions from different Christian traditions,
+                and generate biblical artwork.
+            </p>
+            <div class="welcome-suggestions">
+                <button class="suggestion-btn" data-message="What does John 3:16 say?">
+                    📜 What does John 3:16 say?
+                </button>
+                <button class="suggestion-btn" data-message="What do Catholics believe about purgatory?">
+                    ⛪ Catholic view on purgatory
+                </button>
+                <button class="suggestion-btn" data-message="Is John 4:99 a real verse?">
+                    🔍 Verify a Bible verse
+                </button>
+                <button class="suggestion-btn" data-message="Draw Jesus walking on water">
+                    🎨 Generate biblical art
+                </button>
+            </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="messages-area" id="messages-area"></div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+            <div class="bot-avatar-small">✝</div>
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Input Area -->
+    <footer class="input-area" id="input-area">
+        <div class="input-container">
+            <textarea
+                id="message-input"
+                class="message-input"
+                placeholder="Ask about the Bible, verify a verse, or request an image..."
+                rows="1"
+                maxlength="2000"
+            ></textarea>
+            <button class="send-btn" id="send-btn" title="Send message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+        <p class="input-hint">Scripture Bot uses the KJV Bible and AI to provide grounded answers. Always verify important references.</p>
+    </footer>
+
+    <script src="{% static 'chat/js/chat.js' %}"></script>
+</body>
+</html>
