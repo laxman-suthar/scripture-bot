@@ -117,7 +117,7 @@ See [docs/architecture.md](docs/architecture.md) for detailed technical decision
 
 | Layer | Technology |
 |---|---|
-| Backend | Django 5.1 + Django REST Framework |
+| Backend | Django 5.2 + Django REST Framework |
 | AI / LLM | Google Gemini via LangChain |
 | Embeddings | Gemini embedding-001 |
 | Vector DB | pgvector (PostgreSQL 16) |
